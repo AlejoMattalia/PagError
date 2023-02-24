@@ -1,0 +1,128 @@
+body {
+    font-family: 'Shantell Sans', cursive;
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+
+        .contenedor--imagen {
+            width: 25%;
+            height: 10%;
+            margin: 0 0 0 20%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .contenedor--frases {
+            margin: 3% 0 0 5%;
+            width: 30%;
+
+            p {
+                padding-top: 10%;
+                color: #5e5e5e;
+            }
+        }
+    }
+
+    .contenedor--boton {
+        width: 20%;
+        height: 50px;
+        border: #5e5e5e 2px solid;
+        background-color: #1f1f1f;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &:hover {
+            background-color: #000000;
+            border: #2e2e2e 2px solid;
+        }
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+    }
+}
+
+@media (min-width:800px) and (max-width:1150px) {
+    body {
+        .contenedor {
+            .contenedor--boton {
+                width: 30%
+            }
+        }
+    }
+}
+
+@media (min-width:600px) and (max-width:800px) {
+    body {
+
+        .contenedor {
+            .contenedor--imagen {
+                width: 40%;
+                margin: 0 0 0 10%;
+            }
+
+            .contenedor--frases {
+                margin: 5% 0 0 5%;
+                width: 40%;
+
+                p {
+                    color: #5e5e5e;
+                }
+            }
+        }
+
+        .contenedor--boton {
+            width: 40%;
+        }
+    }
+}
+
+
+@media (min-width:350px) and (max-width:600px) {
+    body {
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .contenedor--imagen {
+                // border: 1px solid black;
+                width: 60%;
+                margin-right: 20%;
+                position: relative;
+                bottom: 50px;
+            }
+
+            .contenedor--frases {
+                margin: 5% 0 0 5%;
+                width: 90%;
+
+                p {
+                    color: #5e5e5e;
+                }
+            }
+        }
+
+        .contenedor--boton {
+            width: 70%;
+            margin-bottom: 10%;
+        }
+
+        footer{
+            position: relative;
+        }
+    }
+}
