@@ -46,7 +46,7 @@ body footer p {
 }
 
 @media (min-width: 800px) and (max-width: 1150px) {
-  body .contenedor .contenedor--boton {
+  body .contenedor--boton {
     width: 30%;
   }
 }
@@ -92,6 +92,11 @@ body footer p {
   }
   body footer {
     position: relative;
+  }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+  body .contenedor--boton {
+    width: 50%;
   }
 }
 
