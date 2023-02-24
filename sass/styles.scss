@@ -126,9 +126,10 @@ body {
     }
 }
 
-@media (min-width:500px) and (max-width:600px){
-    body{
-    .contenedor--boton {
-        width: 50%;
-    }}
+@media (min-width:500px) and (max-width:600px) {
+    body {
+        .contenedor--boton {
+            width: 50%;
+        }
+    }
 }
